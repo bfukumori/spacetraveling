@@ -13,7 +13,7 @@ import styles from './home.module.scss';
 
 interface Post {
   uid?: string;
-  first_publication_date: string | null;
+  first_publication_date: string;
   data: {
     title: string;
     subtitle: string;

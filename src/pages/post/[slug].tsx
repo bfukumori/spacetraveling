@@ -12,7 +12,7 @@ import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 
 interface Post {
-  first_publication_date: string | null;
+  first_publication_date: string;
   data: {
     title: string;
     banner: {
@@ -89,9 +89,8 @@ export default function Post({ post }: PostProps): JSX.Element {
         {post.data.content.map(postContent => (
           <article key={postContent.heading} className={styles.postContent}>
             <h2>{postContent.heading}</h2>
-            {postContent.body.map((body, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <p key={index}>{body.text}</p>
+            {postContent.body.map(body => (
+              <p key={body.text}>{body.text}</p>
             ))}
           </article>
         ))}
@@ -108,7 +107,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }));
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
 };
 
