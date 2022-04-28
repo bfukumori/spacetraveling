@@ -13,7 +13,7 @@
     <img alt="Stargazers" src="https://img.shields.io/github/stars/bfukumori/spacetraveling?style=social">
   </a>
 
-  <a href="https://bfukumori.github.io/spacetraveling/">
+  <a href="https://spacetraveling-717ws823j-brunofukumori-gmailcom.vercel.app/">
     <img alt="spacetraveling" src="https://img.shields.io/badge/spacetraveling-%237159c1?style=flat&logo=ghost">
     </a>
  
